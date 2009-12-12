@@ -1,0 +1,6 @@
+_ReSharper.Daphne
+*.suo
+*.user
+Daphne.Tests\bin
+Daphne.Tests\obj
+Daphne\bin
