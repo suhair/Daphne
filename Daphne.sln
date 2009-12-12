@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daphne", "Daphne\Daphne.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daphne.Tests", "Daphne.Tests\Daphne.Tests.csproj", "{C96CE984-1956-4CC7-8208-80EEE9E599F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaphneDomain", "DaphneDomain\DaphneDomain.csproj", "{8B57B928-63CE-45FC-9B75-00A83CF85E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaphneDomainTests", "DaphneDomainTests\DaphneDomainTests.csproj", "{5FD3D52B-50E3-4C38-8C78-E473705E8BFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{C96CE984-1956-4CC7-8208-80EEE9E599F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C96CE984-1956-4CC7-8208-80EEE9E599F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C96CE984-1956-4CC7-8208-80EEE9E599F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B57B928-63CE-45FC-9B75-00A83CF85E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B57B928-63CE-45FC-9B75-00A83CF85E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B57B928-63CE-45FC-9B75-00A83CF85E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B57B928-63CE-45FC-9B75-00A83CF85E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD3D52B-50E3-4C38-8C78-E473705E8BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD3D52B-50E3-4C38-8C78-E473705E8BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD3D52B-50E3-4C38-8C78-E473705E8BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD3D52B-50E3-4C38-8C78-E473705E8BFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
