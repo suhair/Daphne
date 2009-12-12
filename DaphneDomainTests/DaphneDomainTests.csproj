@@ -34,8 +34,19 @@
   <ItemGroup>
     <Reference Include="Gallio" />
     <Reference Include="MbUnit" />
+    <Reference Include="NDbUnit.Core, Version=1.5.4.25945, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\NDbUnit1.5.4\NDbUnit.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NDbUnit.SqlClient, Version=1.5.2.25945, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\NDbUnit1.5.4\NDbUnit.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Gallio35" />
     <Reference Include="MbUnit35" />
@@ -50,7 +61,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DaphneDomain\DaphneDomain.csproj">
+      <Project>{8B57B928-63CE-45FC-9B75-00A83CF85E55}</Project>
+      <Name>DaphneDomain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Database.xsc">
+      <DependentUpon>Database.xsd</DependentUpon>
+    </None>
+    <None Include="Database.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Database.xss">
+      <DependentUpon>Database.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
